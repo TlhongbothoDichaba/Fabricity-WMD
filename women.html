@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection | Fabricity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Women's page custom styles - Matches men.html structure */
+        .women-hero {
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                        url('images/women-banner.jpg') center/cover no-repeat;
+            padding: 120px 0;
+            color: white;
+            text-align: center;
+        }
+        .category-filter {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .product-card .btn-wishlist {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        .product-card:hover .btn-wishlist {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Identical to index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+       <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+    <span style="color: #000000; font-size: 1.75rem;">Fabricity</span>
+</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+            
+                    <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sale.html">Sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="women-hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Women's Collection</h1>
+            <p class="lead">Effortless style for every occasion</p>
+        </div>
+    </section>
+
+    <!-- Category Filter (Same structure as men.html) -->
+    <section class="py-4">
+        <div class="container">
+            <div class="category-filter">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-4">
+                        <label for="sortBy" class="form-label">Sort By:</label>
+                        <select id="sortBy" class="form-select">
+                            <option>Newest First</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Most Popular</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="category" class="form-label">Category:</label>
+                        <select id="category" class="form-select">
+                            <option>All Items</option>
+                            <option>Dresses</option>
+                            <option>Tops</option>
+                            <option>Bottoms</option>
+                            <option>Outerwear</option>
+                            <option>Accessories</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="size" class="form-label">Size:</label>
+                        <select id="size" class="form-select">
+                            <option>All Sizes</option>
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="images/women-dress-1.jpg" class="card-img-top" alt="Floral Midi Dress">
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-2">New</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Floral Midi Dress</h5>
+                            <p class="text-muted">Perfect for summer days</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="fw-bold text-primary">P300.00</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="images/women-jeans-1.jpg" class="card-img-top" alt="High-Waist Jeans">
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-25%</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Jeans</h5>
+                            <p class="text-muted">Comfort stretch fabric</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="fw-bold text-primary">P450.00</span>
+                                    <span class="text-muted small ms-2"><del>P399.99</del></span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="images/women-blouse-1.jpg" class="card-img-top" alt="Silk Blouse">
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt Blouse long sleeve</h5>
+                            <p class="text-muted">Smart Casual</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="fw-bold text-primary">P250.00</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="card product-card h-100">
+                        <div class="position-relative">
+                            <img src="images/women-jacket-1.jpg" class="card-img-top" alt="Oversized Blazer">
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Puffer Jacket</h5>
+                            <p class="text-muted">Super warm and comfortable</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="fw-bold text-primary">P749.99</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add 4 more products following the same pattern -->
+            </div>
+
+            <!-- Pagination (Same as men.html) -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer (Identical to index.html) -->
+    <footer class="bg-dark text-white py-5">
+          <div class="container text-center">
+            <p>&copy; 2025 Fabricity. Student project for Web Development.</p>
+            <div class="mt-2">
+                <a href="index.html" class="text-white mx-2">Home</a>
+                <a href="contact.html" class="text-white mx-2">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricity | Affordable Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Simple custom styles */
+        .hero {
+            background-color: #859cb0;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .product-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-primary {
+            background-color: #2d9df8;
+            border-color: #2d9df8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Basic Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">
+    <span style="color: #000000; font-size: 1.75rem;">Fabricity</span>
+</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+            
+                    <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sale.html">Sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero mb-5">
+        <div class="container">
+            <h1 class="mb-3">Welcome to Fabricity</h1>
+            <p class="lead mb-4">Affordable fashion for everyone</p>
+            <a href="sale.html" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Shop Categories</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <a href="men.html" class="text-decoration-none">
+                    <div class="card product-card">
+                        <img src="images/men-category.jpg" class="card-img-top" alt="Men's Fashion">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Men's Collection</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="women.html" class="text-decoration-none">
+                    <div class="card product-card">
+                        <img src="images/women-category.jpg" class="card-img-top" alt="Women's Fashion">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Women's Collection</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="sale.html" class="text-decoration-none">
+                    <div class="card product-card">
+                        <img src="images/sale-category.jpg" class="card-img-top" alt="Sale Items">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sale Items</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Fabricity. Student project for Web Development.</p>
+            <div class="mt-2">
+                <a href="index.html" class="text-white mx-2">Home</a>
+                <a href="contact.html" class="text-white mx-2">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
